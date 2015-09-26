@@ -7,3 +7,18 @@ div#page-container {
     width: 90%;
     margin: 0 auto;
 }
+
+div#top-navbar {
+    width: 90%;
+    margin: 0 auto;
+}
+
+div#top-navbar ul{
+    width: 100%;
+}
+
+div#top-navbar li{
+    width: 25%;
+    display: inline;
+    
+}
