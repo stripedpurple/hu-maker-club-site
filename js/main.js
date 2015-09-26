@@ -20,5 +20,5 @@ document.addEventListener("DOMContentLoaded", function () {
         append: function (text) {
             this.appendChild(document.createTextNode(text));
         }
-    }, "p")
+    }, "p");
 });
