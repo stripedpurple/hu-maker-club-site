@@ -1,6 +1,10 @@
+# Makefile for auto deploy of the site
+
+SITENAME    := humaker.club
 DEPLOC      := /var/www/humaker.club
 
-
-all: 
+.PHONY: all
+all: deploy
 	
+.PHONY: deploy
 deploy:
