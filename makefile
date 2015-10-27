@@ -1,5 +1,17 @@
 # Makefile for auto deploy of the site
 # Henry J Schmale
+# C: October 26, 2015
+# M: October 27, 2015
+#
+# To Deploy:
+# 	make deploy
+#
+# To build and test:
+# 	make
+#
+# This was choosen, because every invocation of make should not try to
+# deploy it, and it is easier to test the builds with just a simple `make`
+# command. Also deploys to the server should be explicit when used.
 
 # Deploy settings defines where to deploy the site to
 SITENAME      := humaker.club
@@ -13,7 +25,7 @@ BUILD_OUT_DIR := ./_site/
 EXCLUDE_LIST  := makefile
 
 .PHONY: all
-all: deploy
+all: build
 
 
 RSYNC_EXCLUDE_LIST := $(foreach e, $(EXCLUDE_LIST), --exclude ${e})
