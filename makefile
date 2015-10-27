@@ -4,6 +4,7 @@
 # Deploy settings defines where to deploy the site to
 SITENAME      := humaker.club
 DEPLOC        := /var/www/humaker.club
+PORT          := 1984
 
 # List of things to exclude from the rsync deploy
 EXCLUDE_LIST  := makefile
@@ -15,8 +16,8 @@ all: deploy
 RSYNC_EXCLUDE_LIST := $(foreach e, $(EXCLUDE_LIST), --exclude ${e})
 .PHONY: deploy
 deploy:
-	$(info $(RSYNC_EXCLUDE_LIST))
-	rsync -v -r ${RSYNC_EXCLUDE_LIST} . "${SITENAME}:${DEPLOC}"
+	rsync -avzr -e "ssh -p ${PORT}" \
+		${RSYNC_EXCLUDE_LIST} . "${SITENAME}:${DEPLOC}"
 
 .PHONY: build
 build:
