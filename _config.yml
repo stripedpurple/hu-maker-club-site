@@ -16,7 +16,7 @@ url: "http://humaker.club" # the base hostname & protocol for your site
 facebook: "https://www.facebook.com/groups/853987087968387/"
 bitbucket: "https://bitbucket.org/hudevelopmentclub/"
 
-exclude: [Makefile, Colors]
+exclude: [makefile, Colors]
 include: [.htaccess]
 
 # Build settings
