@@ -1,0 +1,16 @@
+#header h1, .container h2 {
+	color: #d9003f;
+}
+
+.container a {
+	font-weight: 700;
+}
+
+.container a, #header nav > ul > li a:hover, #footer a:hover {
+	color: #82cfc9;
+	text-decoration: none;
+}
+
+.container a:hover {
+	text-decoration: underline;
+}

@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<section class="wrapper style1">
+	<div id="main" class="container">
+		<header class="major special">
+			<h2>{{ page.title }}</h2>
+			{% if page.subtitle %}
+			<p>{{ page.subtitle }}</p>
+			{% endif %}
+		</header>
+		{{ content }}
+	</div>
+</section>

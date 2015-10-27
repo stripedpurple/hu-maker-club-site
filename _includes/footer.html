@@ -1,0 +1,16 @@
+	<footer id="footer">
+		<div class="container">
+			<ul class="icons">
+				{% if site.facebook %}
+				<li><a href="{{ site.facebook }}" class="icon fa-facebook"></a></li>
+				{% endif %}
+				{% if site.bitbucket %}
+				<li><a href="{{ site.bitbucket }}" class="icon fa-bitbucket"></a></li>
+				{% endif %}
+			</ul>
+			<ul class="copyright">
+				<li>Content &copy; {{ site.title }}</li>
+				<li>Design: <a href="http://templated.co">TEMPLATED</a> with slight modifications</li>
+			</ul>
+		</div>
+	</footer>

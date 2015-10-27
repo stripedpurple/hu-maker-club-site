@@ -1,0 +1,23 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Harrisburg University Maker's Club
+email: siheybey@my.harrisburgu.edu
+description: > # for meta tags.
+  Maker's club is a motely collection of college students attending Harrisburg
+  University who love to make things from arcade cabinets to laser harps.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://humaker.club" # the base hostname & protocol for your site
+facebook: "https://www.facebook.com/groups/853987087968387/"
+bitbucket: "https://bitbucket.org/hudevelopmentclub/"
+
+exclude: [Makefile, Colors]
+include: [.htaccess]
+
+# Build settings
+markdown: kramdown
