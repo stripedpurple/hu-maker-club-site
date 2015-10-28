@@ -1,8 +1,20 @@
+# members.yml
+# This file defines the members of the HU Maker Club
+#
+# Each member can have the following fields for their blurb on the members
+# page.
+#
+# name: (Req) The name of the member.
+# site: (Opt) A link to their site.
+# description: (Opt) single paragraph about that member
+
 - name: Austin Barret
 
 - name: Bobby Klein
 
 - name: Henry Schmale
+  description: >
+    A computer and information science student at Harrisburg University.
 
 - name: Sam Heybey
 
