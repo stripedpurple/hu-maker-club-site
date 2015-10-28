@@ -1,0 +1,13 @@
+# This file lists our various projects
+
+- title: Arcade Cabinet
+  description: >
+      We are building an arcade cabinet to play retro games on. When it is
+      done we will donate it to our university. It uses a Raspberry Pi as
+      the brains of the operation.
+
+- title: Laser Harp
+  description: >
+      One of our future projects will be a laser harp. A laser harp detects
+      when a laser is broken and creates a tone based on how that laser was
+      broken and the speed of the break.
