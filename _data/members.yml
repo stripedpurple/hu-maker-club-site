@@ -4,14 +4,17 @@
 # Each member can have the following fields for their blurb on the members
 # page.
 #
+# It is important to note that the order of declaration in this file
+# indicates the order they will be listed on the sight.
+#
 # name: (Req) The name of the member.
 # site: (Opt) A link to their site.
 # description: (Opt) single paragraph about that member
 
-- name: Austin Barret
-
-- name: Bobby Klein
+- name: Bobby Klein (Pres)
   site: http://workofbobby.com/
+
+- name: Austin Barret (VP)
 
 - name: Sam Heybey
 
