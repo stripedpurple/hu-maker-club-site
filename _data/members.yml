@@ -11,11 +11,11 @@
 # site: (Opt) A link to their site.
 # description: (Opt) single paragraph about that member
 
-- name: Bobby Klein (Pres)
+- name: Bobby Klein (President)
   site: http://workofbobby.com/
 
-- name: Austin Barret (VP)
-
+- name: Austin Barret (Vice President)
+  site: http://austinisa.ninja
 - name: Sam Heybey
 
 - name: Henry Schmale
