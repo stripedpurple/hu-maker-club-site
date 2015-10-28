@@ -1,0 +1,25 @@
+---
+layout: page
+title: Members
+subitle: 
+permalink: /members/
+---
+
+<ul>
+{% for member in site.data.members %}
+    <li>
+        <p><strong>
+        {% if member.site != nil %}
+            <a href="{{ member.site }}">
+            {{ member.name}}
+            </a>
+        {% else %}
+            {{ member.name }}
+        {% endif %}
+        </strong></p>
+        {% unless member.description == nil %}
+            <p>{{ member.description }}</p>
+        {% endunless %}
+    </li>
+{% endfor %}
+</ul>

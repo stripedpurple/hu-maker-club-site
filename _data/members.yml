@@ -11,11 +11,12 @@
 - name: Austin Barret
 
 - name: Bobby Klein
-
-- name: Henry Schmale
-  description: >
-    A computer and information science student at Harrisburg University.
+  site: http://workofbobby.com/
 
 - name: Sam Heybey
 
+- name: Henry Schmale
+  site: http://henryschmale.org/
+  description: >
+    A computer and information science student at Harrisburg University.
 
