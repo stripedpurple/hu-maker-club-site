@@ -1,25 +1,28 @@
 ---
 layout: page
 title: Members
-subitle: 
+subitle: Meet our talented crew of makers
 permalink: /members/
 ---
-
-<ul>
 {% for member in site.data.members %}
-    <li>
-        <p><strong>
-        {% if member.site != nil %}
-            <a href="{{ member.site }}">
-            {{ member.name}}
-            </a>
-        {% else %}
-            {{ member.name }}
-        {% endif %}
-        </strong></p>
-        {% unless member.description == nil %}
-            <p>{{ member.description }}</p>
-        {% endunless %}
-    </li>
+<section id="{{ member.name | slugify }}" class="wrapper {% cycle 'style1', 'style2' %}">
+	<div class="container 75%">
+		<div class="row 200%">
+			<div class="6u 12u$(medium)">
+				<header>
+					<h2>{{ member.name }}</h2>
+					{% if member.subtitle %}
+					<p>{{ member.subtitle }}</p>
+					{% endif %}
+					{% if member.site %}
+					<p><a href="{{ member.site }}">{{ member.site }}</a></p>
+					{% endif %}
+				</header>
+			</div>
+			<div class="6u$ 12u$(medium)">
+				<p>{{ member.description }}</p>
+			</div>
+		</div>
+	</div>
+</section>
 {% endfor %}
-</ul>

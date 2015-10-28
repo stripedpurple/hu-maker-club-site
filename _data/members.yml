@@ -8,15 +8,26 @@
 # indicates the order they will be listed on the sight.
 #
 # name: (Req) The name of the member.
+# subtitle: (Opt) Position in club
 # site: (Opt) A link to their site.
-# description: (Opt) single paragraph about that member
+# description: (Req) single paragraph about that member
 
-- name: Bobby Klein (President)
+
+- name: Bobby Klein
+  subtitle: President
   site: http://workofbobby.com/
+  description: >
+    Does nothing of use.
 
-- name: Austin Barret (Vice President)
+- name: Austin Barret
+  subtitle: Vice President
   site: http://austinisa.ninja
+  description: >
+    Buys pizza, swears profusely.
+
 - name: Sam Heybey
+  description: >
+    Consumes pizza, runs server.
 
 - name: Henry Schmale
   site: http://henryschmale.org/
