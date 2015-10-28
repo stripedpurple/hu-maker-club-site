@@ -1,11 +1,27 @@
 ---
-layout: page
+layout: bare
 title: Projects
-subitle: The things we build
+subtitle: The things we build
 permalink: /projects/
 ---
 
-{% for project in site.data.projects %}
-<h1>{{ project.title }}</h1>
-{{ project.description }}
+{% for post in site.posts %}
+	{% if post.category == 'projects' %}
+		<section id="{{ post.title | slugify }}" class="wrapper {% cycle 'style1', 'style2' %}">
+			<div class="container 75%">
+				<div class="row 200%">
+					<div class="6u 12u$(medium)">
+						<header>
+							<h2>{{ post.title }}</h2>
+							<p><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %-d, %Y" }}</time></p>
+						</header>
+					</div>
+					<div class="6u$ 12u$(medium)">
+						{{ post.excerpt }}
+						<p><a href="{{ post.url }}">Read more...</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+	{% endif %}
 {% endfor %}

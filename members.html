@@ -1,26 +1,26 @@
 ---
 layout: bare
 title: Members
-subitle: Meet our talented crew of makers
+subtitle: Meet our talented crew of makers
 permalink: /members/
 ---
 {% for member in site.data.members %}
-<section id="{{ member.name | slugify }}" class="wrapper {% cycle 'style1', 'style2' %}">
-	<div class="container 75%">
-		<div class="row 200%">
-			<div class="6u 12u$(medium)">
-				<header>
-					<h2>{{ member.name }}</h2>
-					<p>{{ member.subtitle }}</p><!-- yes, we want this p tag to be here, even if it is empty -->
-					{% if member.site %}
-					<p><a href="{{ member.site }}">{{ member.site }}</a></p>
-					{% endif %}
-				</header>
-			</div>
-			<div class="6u$ 12u$(medium)">
-				<p>{{ member.description }}</p>
+	<section id="{{ member.name | slugify }}" class="wrapper {% cycle 'style1', 'style2' %}">
+		<div class="container 75%">
+			<div class="row 200%">
+				<div class="6u 12u$(medium)">
+					<header>
+						<h2>{{ member.name }}</h2>
+						<p>{{ member.subtitle }}</p><!-- yes, we want this p tag to be here, even if it is empty -->
+						{% if member.site %}
+							<p><a href="{{ member.site }}">{{ member.site }}</a></p>
+						{% endif %}
+					</header>
+				</div>
+				<div class="6u$ 12u$(medium)">
+					<p>{{ member.description }}</p>
+				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
 {% endfor %}

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Arcade Cabinet
-permalink: projects/arcade-cabinet
+category: projects
 ---
 
 We are building a retro arcade cabinet. This project will use a raspberry 
