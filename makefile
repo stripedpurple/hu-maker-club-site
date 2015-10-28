@@ -18,22 +18,27 @@ SITENAME      := humaker.club
 DEPLOC        := /var/www/humaker.club
 PORT          := 1984
 
+# Fix file owner settings
+USER   	      := $(shell whoami)
+GROUP         := humakerclub
+CHOWN         := "${USER}:${GROUP}"
+
 # Directory where jekyll outputs the built site
 BUILD_OUT_DIR := ./_site/
 
 # List of things to exclude from the rsync deploy
 EXCLUDE_LIST  := makefile
+RSYNC_EXCLUDE_LIST := $(foreach e, $(EXCLUDE_LIST), --exclude ${e})
 
 .PHONY: all
 all: build
 
-
-RSYNC_EXCLUDE_LIST := $(foreach e, $(EXCLUDE_LIST), --exclude ${e})
 .PHONY: deploy
 deploy: build
-	rsync -avzr -e "ssh -p ${PORT}" \
+	rsync -avzrog -e "ssh -p ${PORT}" --chown=${CHOWN} \
 		${RSYNC_EXCLUDE_LIST} ${BUILD_OUT_DIR} "${SITENAME}:${DEPLOC}"
 
 .PHONY: build
 build:
 	jekyll build
+	find ${BUILD_OUT_DIR} -type d -exec chmod g+s {} \;
