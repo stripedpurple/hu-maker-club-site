@@ -14,3 +14,9 @@
 .container a:hover {
 	text-decoration: underline;
 }
+
+span.md-center {
+	text-align: center;
+	width: 100%;
+	display: inline-block;
+}
