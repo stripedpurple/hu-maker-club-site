@@ -12,25 +12,25 @@
 # site: (Opt) A link to their site.
 # description: (Req) single paragraph about that member
 
-
-- name: Bobby Klein
-  subtitle: President
-  site: http://workofbobby.com/
-  description: >
-    Photographer and ailurophile extraordinaire.
-
 - name: Austin Barret
-  subtitle: Vice President
-  site: http://austinisa.ninja
+  subtitle: President
+  site: http://stripedpurple.io
   description: >
     Paradox cloaked up in a mystery.
-
+- name: Henry Schmale
+  site: https://www.henryschmale.org/
+  subtitle: Vice President
+  description: >
+    The magificent kludge developer
 - name: Sam Heybey
+  site: http://sam.heybey.org
+  subtitle: Treasurer
   description: >
     Consumes pizza, runs server, and looks like a 40 year old unix sysadmin.
-
-- name: Henry Schmale
-  site: http://henryschmale.org/
+- name: Bobby Klein
+  site: http://bobbyvklein.com/
   description: >
-    A computer and information science student at Harrisburg University.
-
+    Photographer and ailurophile extraordinaire.
+- name: Tom Hartmann
+  description: >
+    3D Models and hates descriptions
